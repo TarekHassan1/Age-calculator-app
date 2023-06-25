@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 650px;
+    height: 515px;
+    padding: 3rem 3rem;
+    border-radius: 1rem;
+    position: relative;
+    border-bottom-right-radius: 11rem;
+    background-color: white;
+}
+
+body{
+    background: hsl(0deg 0% 94.12%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.input-age{
+    display: flex;
+    margin-bottom: 4rem;
+}
+.input-age div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.75rem;
+    position: relative;
+}
+.input-age div label{
+    color: hsl(0, 1%, 44%);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.325rem;
+}
+
+.input-age div input{
+    border: 1px solid hsl(0, 0%, 86%);
+    padding:0.5rem;
+    padding-left: 1rem;
+    padding-right: 0rem;
+    border-radius: 0.5rem;
+    width: 130px;
+    display: flex;
+    color: hsl(0, 1%, 44%);
+    font-size: 1.75rem;
+    font-weight: 800;
+    justify-content:center;
+    align-items: center;
+
+}
+.input-age div p{
+    position: absolute;
+    top: 5.75rem;
+    color: hsl(0, 100%, 67%);
+    display: none;
+    transition: 0.5s;
+}
+.input-age div p.show{
+    display: block;
+}
+.input-age div input.invalid-input{
+    border: 1px solid red;
+} 
+hr{
+    background-color: hsl(0, 0%, 86%);;
+    opacity: 0.4;
+}
+.output-age{
+    margin-top: 1.5rem;
+}
+.output-age p{
+    font-weight: 800;
+    line-height: 5.5rem;
+    font-size: 5rem;
+    font-style: italic;
+}
+img{
+    background: hsl(258.54deg 100% 65.1%);
+    border-radius: 50%;
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 3rem;
+    top: 10.3rem;
+    transition: all 0.5s;
+}
+img:hover{
+    background: black;
+}
+.output-age span{
+    margin-left: 0.75rem;
+    color: hsl(258.54deg 100% 65.1%);
+}
+
+@media (max-width:375px) {
+    main{
+        width: 325px;
+        padding: 1rem;
+        margin-inline: auto;
+    }
+    img{
+    left: 8rem;
+    top: 8.25rem;
+
+    }
+        .input-age div{
+            margin-right: 0.75rem;
+        }
+    .input-age div input{
+            width: 85px;
+    }    .input-age div:last-of-type input{
+        width: 100px;
+        padding-left: 0.6rem;
+    }
+    .output-age p{
+        font-size: 3rem;
+    }
+}
+.attribution{
+   margin-top: 2rem;
+}
